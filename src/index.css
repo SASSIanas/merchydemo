@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Merchy.ma Design System - Modern E-commerce Theme */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 15% 15%;
+
+    /* Merchy Green Theme */
+    --primary: 140 45% 42%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 140 45% 52%;
+    --primary-dark: 140 45% 32%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 215 15% 15%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 140 25% 95%;
+    --accent-foreground: 140 45% 42%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 140 45% 42%;
+
+    /* Merchy Specific Colors */
+    --merchy-green: 140 45% 42%;
+    --merchy-green-light: 140 45% 52%;
+    --merchy-green-dark: 140 45% 32%;
+    --merchy-orange: 15 85% 58%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--merchy-green)), hsl(var(--merchy-green-light)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--accent)));
+    
+    /* Shadows */
+    --shadow-card: 0 4px 20px -4px hsl(var(--merchy-green) / 0.1);
+    --shadow-hover: 0 8px 30px -4px hsl(var(--merchy-green) / 0.2);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 215 15% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 215 15% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 215 15% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 140 45% 52%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 140 45% 62%;
+    --primary-dark: 140 45% 42%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 140 45% 52%;
+
+    /* Dark mode gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--merchy-green-dark)), hsl(var(--merchy-green)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--accent)));
+    
+    --shadow-card: 0 4px 20px -4px hsl(var(--merchy-green) / 0.3);
+    --shadow-hover: 0 8px 30px -4px hsl(var(--merchy-green) / 0.4);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-hero {
+    @apply bg-gradient-to-r from-merchy-green to-merchy-green-light text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-merchy-orange text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105;
+  }
+  
+  .card-product {
+    @apply bg-card rounded-xl p-4 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-300 hover:-translate-y-1;
+  }
+  
+  .tag-pill {
+    @apply bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer;
+  }
+}
+
+.shadowText{
+  text-shadow: 0px 0px 2px black;
+}
+@font-face {
+  font-family: Sassi;
+  src: url(../public/FlyingPeacePersonalUseRegular-vmeK4.ttf);
+}
+
+
+::-webkit-scrollbar{
+  display: none;
+}
