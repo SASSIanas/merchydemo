@@ -36,7 +36,8 @@ cd merchydemo
 
 ### 2. Installer les dépendances
 
-npm install #or npm i
+npm install
 
 ### 3. Lancer le projet en mode développement
+
 npm run dev
