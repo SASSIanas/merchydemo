@@ -14,16 +14,16 @@ const Footer = () => {
   const usefulLinks = [
     { name: "About Us", path: "/about" },
     { name: "Contact", path: "/contact" },
-    { name: "FAQ", path: "/faq" },
-    { name: "Shipping Info", path: "/shipping" },
-    { name: "Returns", path: "/returns" }
+    { name: "Seller on Merchy", path: "/seller-terms" },
+    
   ];
-
+  
   const informationLinks = [
+    
+    { name: "Terms & Conditions", path: "/terms" },
+    { name: "Returns & exchanges", path: "/returns" },
+    { name: "Shipping & Delivery", path: "/shipping" },
     { name: "Privacy Policy", path: "/privacy" },
-    { name: "Terms of Service", path: "/terms" },
-    { name: "Cookie Policy", path: "/cookies" },
-    { name: "Seller Terms", path: "/seller-terms" }
   ];
 
   const socialLinks = [

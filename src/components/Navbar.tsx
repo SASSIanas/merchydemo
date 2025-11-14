@@ -148,7 +148,9 @@ const Navbar = () => {
                 <Search className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="sm" className="text-foreground rounded-full border h-10 w-10">
+                <Link to={"/login"}>
                 <User className="h-5 w-5" />
+                </Link>
               </Button>
               <Button variant="ghost" size="sm" className="text-foreground relative  rounded-full border h-10 w-10">
                 <Link

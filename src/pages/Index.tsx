@@ -8,7 +8,7 @@ import ProductCard from "@/components/ProductCard";
 import BoutiqueCard from "@/components/BoutiqueCard";
 import { Button } from "@/components/ui/button";
 import { dummyProducts, dummyBoutiques, dummyYoutubers } from "@/data/assets";
-import Hero from "@/components/Hero";
+import Hero from "../components/hero"
 
 const Index = () => {
   const [productFilter, setProductFilter] = useState<'random' | 'new'>('random');
@@ -138,7 +138,7 @@ const Index = () => {
       <section className="p-4 bg-red-600 m-2 mb-10 rounded-xl sm:mx-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-4 bg-black/80 p-10 rounded-xl ">
-            <img src="https://revancedextended.cc/wp-content/uploads/2023/08/YouTube-Music-ReVanced-Logo.png"
+            <img src="https://www.svgrepo.com/show/452138/youtube.svg"
               className="w-20 h-20  mx-auto mb-2" alt="" />
             <h2 className="text-xl md:text-4xl font-bold text-white mb-4">
               Votre YouTuber Préféré
